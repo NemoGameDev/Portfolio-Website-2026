@@ -314,7 +314,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 769px) {
   #hero-section {
     background-size: 100%;
-    justify-content: space-between;
+    gap: 0;
   }
   .name-container {
     display: flex;

@@ -199,7 +199,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
         grid-template-rows: auto auto auto;
     }
     .project-video{
-        grid-row: span 4;
+        grid-row: span 3;
         grid-column: span 3;
     }
 
@@ -211,8 +211,11 @@ You can adjust the min-width numbers below, and add as many new media queries as
         grid-row: span 1;
     }
     .project-info{
-        grid-row: span 2;
+        grid-row: span 1;
 
+    }
+    .project-info p{
+        padding: 0.5rem;
     }
 }
 
