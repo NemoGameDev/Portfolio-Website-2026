@@ -1,144 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Template</title>
-    <link rel="stylesheet" href="styles/paint.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-</head>
+    <link rel="stylesheet" href="styles/paint.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
 
-<body>
+  <body>
     <div id="background-overlay"></div>
 
     <div class="container">
-        <div id="button-container">
-            <a href="../index.html" class="btn" id="back-btn">Back</a>
-        </div>
+      <div id="button-container">
+        <a href="../index.html" class="btn" id="back-btn">Back</a>
+      </div>
 
-        <div id="display-container">
+      <div id="display-container">
+        <img class="slide" src="../Assets/paint/paint-title.png" alt="" />
+        <img class="slide" src="../Assets/paint/paint-gameplay-2.png" alt="" />
+        <img class="slide" src="../Assets/paint/paint-gameplay-3.png" alt="" />
+        <iframe
+          class="slide"
+          id="project-video"
+          src="https://youtube.com/embed/QKDNYB6LLjM"
+          width="100%"
+          height="100%"
+        ></iframe>
+        <a class="prev" onclick="plusSlides(-1)">◀</a>
+        <a class="next" onclick="plusSlides(1)">▶</a>
+      </div>
 
-            <img class="slide" src="../Assets/paint/paint-title.png" alt="">
-            <img class="slide" src="../Assets/paint/paint-gameplay-2.png" alt="">
-            <img class="slide" src="../Assets/paint/paint-gameplay-3.png" alt="">
-                <iframe class="slide" id="project-video" src="https://youtube.com/embed/QKDNYB6LLjM" width="100%" height="100%"></iframe>
-            <a class="prev" onclick="plusSlides(-1)">◀</a>
-            <a class="next" onclick="plusSlides(1)">▶</a>
-        </div>
+      <a href="https://nehemiah-cedillo.itch.io/paint" class="btn" id="play-btn"
+        >Play!</a
+      >
 
-        <a href="https://nehemiah-cedillo.itch.io/paint" class="btn" id="play-btn">Play!</a>
+      <div class="info-desc-container">
+        <section id="description-section">
+          <p class="desc-em1">Quickly!</p>
+          <p>Paint as many paintings as you can!</p>
+        </section>
 
-        <div class="info-desc-container">
-            <section id="description-section">
-                <p class="desc-em1">Quickly!</p>
-                <p>Paint as many paintings as you can!</p>
-            </section>
+        <section class="info-section" id="dev-date-info">
+          <p class="desc-em2">Development:</p>
+          <p>May 30th, 2025 - June 1st 2025</p>
+        </section>
 
-            <section class="info-section" id="dev-date-info">
-                <p class="desc-em2">Development:</p>
-                <p>May 30th, 2025 - June 1st 2025</p>
-            </section>
+        <section class="info-section" id="purpose-info">
+          <p class="desc-em2">Created For:</p>
+          <p>Jame Gam #43</p>
+        </section>
 
-            <section class="info-section" id="purpose-info">
-                <p class="desc-em2">Created For:</p>
-                <p>Jame Gam #43</p>
-            </section>
-
-            <section class="info-section" id="team-info">
-                <h1>Team:</h1>
-                <div class="team-member">
-                    <h3>Quote0040 - Composer</h3>
-                    <div class="links-container">
-                    </div>
-                </div>
-                <div class="team-member">
-                    <h3>dovvydotcom</h3>
-                    <div class="links-container">
-                    </div>
-                </div>
-                <div class="team-member">
-                    <h3>Nehemiah Cedillo - Programmer</h3>
-                    <div class="links-container">
-                        <a href="https://www.instagram.com/nemo_gamedevstudios/" class="instagram-icon icon"> </a>
-                        <a href="https://nehemiah-cedillo.itch.io/" class="itch-icon icon"></a>
-                        <a href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
-                            class="facebook-icon icon"></a>
-                        <a href="https://www.linkedin.com/in/nehemiah-cedillo/" class="linkedin-icon icon"></a>
-                        <a href="" class="website-icon icon"></a>
-                    </div>
-                </div>
-            </section>
-
-        </div>
+        <section class="info-section" id="team-info">
+          <h1>Team:</h1>
+          <div class="team-member">
+            <h3>Quote0040 - Composer</h3>
+            <div class="links-container"></div>
+          </div>
+          <div class="team-member">
+            <h3>dovvydotcom</h3>
+            <div class="links-container"></div>
+          </div>
+          <div class="team-member">
+            <h3>Nehemiah Cedillo - Programmer</h3>
+            <div class="links-container">
+              <a
+                href="https://www.instagram.com/nemo_gamedevstudios/"
+                class="instagram-icon icon"
+              >
+              </a>
+              <a
+                href="https://nehemiah-cedillo.itch.io/"
+                class="itch-icon icon"
+              ></a>
+              <a
+                href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
+                class="facebook-icon icon"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nehemiah-cedillo/"
+                class="linkedin-icon icon"
+              ></a>
+              <a href="" class="website-icon icon"></a>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script>
-        let slideIndex = 0;
-        showSlides(slideIndex);
+      let slideIndex = 0;
+      showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            if (n >= slides.length) { slideIndex = slides.length - 1 }
-            if (n < 0) { slideIndex = 0 }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex].style.display = "block";
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {
+          slideIndex = slides.length - 1;
         }
+        if (n < 0) {
+          slideIndex = 0;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+      }
     </script>
-</body>
+  </body>
 
-<footer>
-    <img src="../Assets/WebIcon.png" alt="" id="icon">
+  <footer>
+    <img src="../Assets/WebIcon.png" alt="" id="icon" />
     <p>@ Copyright 2026 Nehemiah Cedillo. All Rights Reserved.</p>
     <nav class="footer-nav">
-        <div class="footer-container" id="footer-left-container">
-            <h3>Projects:</h3>
-            <nav class="footer-projects-container">
-            <ul class="footer-projects-list">
-                <li>Unity</li>
-                <li class="footer-project">
-                    <a href="../project-evolment/evolment.html">Evolvment</a>
-                </li>
-                <li class="footer-project">
-                    <a href="../project-paint/paint.html">Paint!</a>
-                </li>
-            </ul>
-            <ul class="footer-projects-list">
-                <li>Udemy / Learning Projects</li>
-                <li class="footer-project">
-                    <a href="../unity-projects/unity-projects.html">Unity</a>
-                </li>
-            </ul>
-            </nav>
+      <div class="footer-container" id="footer-left-container">
+        <h3>Projects:</h3>
+        <nav class="footer-projects-container">
+          <ul class="footer-projects-list">
+            <li>Unity</li>
+            <li class="footer-project">
+              <a href="../project-evolment/evolment.html">Evolvment</a>
+            </li>
+            <li class="footer-project">
+              <a href="../project-paint/paint.html">Paint!</a>
+            </li>
+          </ul>
+          <ul class="footer-projects-list">
+            <li>Learning Projects</li>
+            <li class="footer-project">
+              <a href="../unity-projects/unity-projects.html">Unity</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="footer-border"></div>
+
+      <div class="footer-container" id="footer-right-container">
+        <h3>About Me</h3>
+        <a href="../about-me/about-me.html" id="footer-about-me-link"
+          >About Me</a
+        >
+
+        <h3>Contact Me</h3>
+        <a href="mailto:nehemiah.cedillo@hotmail.com"
+          >nehemiah.cedillo@hotmail.com</a
+        >
+        <div class="social-media-container">
+          <a
+            href="https://www.instagram.com/nemo_gamedevstudios/"
+            class="instagram-icon icon"
+          >
+          </a>
+          <a
+            href="https://nehemiah-cedillo.itch.io/"
+            class="itch-icon icon"
+          ></a>
+          <a
+            href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
+            class="facebook-icon icon"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nehemiah-cedillo/"
+            class="linkedin-icon icon"
+          ></a>
         </div>
-
-        <div id="footer-border"></div>
-
-        <div class="footer-container" id="footer-right-container">
-            <h3>About Me</h3>
-            <a href="../about-me/about-me.html" id="footer-about-me-link">About Me</a>
-
-            <h3>Contact Me</h3>
-            <a href="mailto:nehemiah.cedillo@hotmail.com">nehemiah.cedillo@hotmail.com</a>
-            <div class="social-media-container">
-                <a href="https://www.instagram.com/nemo_gamedevstudios/" class="instagram-icon icon"> </a>
-                <a href="https://nehemiah-cedillo.itch.io/" class="itch-icon icon"></a>
-                <a href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr" class="facebook-icon icon"></a>
-                <a href="https://www.linkedin.com/in/nehemiah-cedillo/" class="linkedin-icon icon"></a>
-            </div>
-        </div>
+      </div>
     </nav>
-</footer>
-
+  </footer>
 </html>

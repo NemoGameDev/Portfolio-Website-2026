@@ -1,161 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Evolment</title>
-    <link rel="stylesheet" href="styles/evolment.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-</head>
+    <link rel="stylesheet" href="styles/evolment.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
 
-
-<body>
+  <body>
     <div id="background-overlay"></div>
 
     <div class="container">
-        <div id="button-container">
-            <a href="../index.html" class="btn" id="back-btn">Back</a>
-        </div>
-        <div id="display-container">
+      <div id="button-container">
+        <a href="../index.html" class="btn" id="back-btn">Back</a>
+      </div>
+      <div id="display-container">
+        <img class="slide" src="../Assets/evolment/evolment-title.png" alt="" />
+        <iframe
+          class="slide"
+          id="project-video"
+          src="https://youtube.com/embed/PouuCMsPJHs"
+          frameborder="0"
+        ></iframe>
+        <img
+          class="slide"
+          src="../Assets/evolment/evolment-gameplay-1.png"
+          alt=""
+        />
+        <img
+          class="slide"
+          src="../Assets/evolment/evolment-gameplay-2.png"
+          alt=""
+        />
 
-            <img class="slide" src="../Assets/evolment/evolment-title.png" alt="">
-            <iframe class="slide" id="project-video" src="https://youtube.com/embed/PouuCMsPJHs" frameborder="0"></iframe>
-            <img class="slide" src="../Assets/evolment/evolment-gameplay-1.png" alt="">
-            <img class="slide" src="../Assets/evolment/evolment-gameplay-2.png" alt="">
+        <a class="prev" onclick="plusSlides(-1)">◀</a>
+        <a class="next" onclick="plusSlides(1)">▶</a>
+      </div>
 
+      <a
+        href="https://nehemiah-cedillo.itch.io/evolment"
+        class="btn"
+        id="play-btn"
+        >Play!</a
+      >
 
-            <a class="prev" onclick="plusSlides(-1)">◀</a>
-            <a class="next" onclick="plusSlides(1)">▶</a>
-        </div>
+      <div class="info-desc-container">
+        <section id="description-section">
+          <p class="desc-em1">Survive!</p>
 
-        <a href="https://nehemiah-cedillo.itch.io/evolment" class="btn" id="play-btn">Play!</a>
+          <p>Waves of Elemental enemies are heading your way!</p>
+          <p>
+            And be careful! If you get hit, you will evolve and gain their
+            element.
+          </p>
 
-        <div class="info-desc-container">
-            <section id="description-section">
-                <p class="desc-em1">Survive!</p>
+          <p>Perhaps you can use this to your advantage...?</p>
+        </section>
 
-                <p>Waves of Elemental enemies are heading your way!</p>
-                <p>And be careful! If you get hit, you will evolve and gain their element.</p>
+        <section class="info-section" id="dev-date-info">
+          <p class="desc-em2">Development:</p>
+          <p>June 5th, 2025 - June 8th 2025</p>
+        </section>
 
-                <p>Perhaps you can use this to your advantage...?</p>
-            </section>
+        <section class="info-section" id="purpose-info">
+          <p class="desc-em2">Created For:</p>
+          <p>Mini Jam 186: Evolution</p>
+        </section>
 
-            <section class="info-section" id="dev-date-info">
-                <p class="desc-em2">Development:</p>
-                <p>June 5th, 2025 - June 8th 2025</p>
-            </section>
+        <section class="info-section" id="team-info">
+          <h1>Team:</h1>
+          <div class="team-member">
+            <h3>Myrtax Toadys - 2D Artist</h3>
+            <div class="links-container">
+              <a href="https://myrtax.itch.io/" class="itch-icon icon"></a>
+              <a
+                href="https://www.artstation.com/myrtax"
+                class="artstation-icon icon"
+              ></a>
+              <a href="https://x.com/myrtaxgames" class="x-icon icon"></a>
+            </div>
+          </div>
 
-            <section class="info-section" id="purpose-info">
-                <p class="desc-em2">Created For:</p>
-                <p>Mini Jam 186: Evolution</p>
-            </section>
+          <div class="team-member">
+            <h3>Nehemiah Cedillo - Programmer</h3>
+            <div class="links-container">
+              <a
+                href="https://www.instagram.com/nemo_gamedevstudios/"
+                class="instagram-icon icon"
+              >
+              </a>
+              <a
+                href="https://nehemiah-cedillo.itch.io/"
+                class="itch-icon icon"
+              ></a>
+              <a
+                href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
+                class="facebook-icon icon"
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/nehemiah-cedillo/"
+                class="linkedin-icon icon"
+              ></a>
+              <a href="" class="website-icon icon"></a>
+            </div>
+          </div>
 
-            <section class="info-section" id="team-info">
-                <h1>Team:</h1>
-                <div class="team-member">
-                    <h3>Myrtax Toadys - 2D Artist</h3>
-                    <div class="links-container">
-                        <a href="https://myrtax.itch.io/" class="itch-icon icon"></a>
-                        <a href="https://www.artstation.com/myrtax" class="artstation-icon icon"></a>
-                        <a href="https://x.com/myrtaxgames" class="x-icon icon"></a>
-                    </div>
-                </div>
+          <div class="team-member">
+            <h3>Dev Sikowitz - Sound Designer</h3>
+            <div class="links-container">
+              <a href="https://dovsiko.com/" class="website-icon icon"></a>
+            </div>
+          </div>
 
-                <div class="team-member">
-                    <h3>Nehemiah Cedillo - Programmer</h3>
-                    <div class="links-container">
-                        <a href="https://www.instagram.com/nemo_gamedevstudios/" class="instagram-icon icon"> </a>
-                        <a href="https://nehemiah-cedillo.itch.io/" class="itch-icon icon"></a>
-                        <a href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
-                            class="facebook-icon icon"></a>
-                        <a href="https://www.linkedin.com/in/nehemiah-cedillo/" class="linkedin-icon icon"></a>
-                        <a href="" class="website-icon icon"></a>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <h3>Dev Sikowitz - Sound Designer</h3>
-                    <div class="links-container">
-                        <a href="https://dovsiko.com/" class="website-icon icon"></a>
-                    </div>
-                </div>
-
-                <div class="team-member">
-                    <h3>Quote - Composer</h3>
-                    <div class="links-container">
-
-                    </div>
-                </div>
-            </section>
-        </div>
+          <div class="team-member">
+            <h3>Quote - Composer</h3>
+            <div class="links-container"></div>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script>
-        let slideIndex = 0;
-        showSlides(slideIndex);
+      let slideIndex = 0;
+      showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
 
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slide");
-            if (n >= slides.length) { slideIndex = slides.length - 1 }
-            if (n < 0) { slideIndex = 0 }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slideIndex].style.display = "block";
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        if (n >= slides.length) {
+          slideIndex = slides.length - 1;
         }
+        if (n < 0) {
+          slideIndex = 0;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex].style.display = "block";
+      }
     </script>
-</body>
-<footer>
-    <img src="../Assets/WebIcon.png" alt="" id="icon">
+  </body>
+  <footer>
+    <img src="../Assets/WebIcon.png" alt="" id="icon" />
     <p>@ Copyright 2026 Nehemiah Cedillo. All Rights Reserved.</p>
     <nav class="footer-nav">
-        <div class="footer-container" id="footer-left-container">
-            <h3>Projects:</h3>
-            <nav class="footer-projects-container">
-            <ul class="footer-projects-list">
-                <li>Unity</li>
-                <li class="footer-project">
-                    <a href="../project-evolment/evolment.html">Evolvment</a>
-                </li>
-                <li class="footer-project">
-                    <a href="../project-paint/paint.html">Paint!</a>
-                </li>
-            </ul>
-            <ul class="footer-projects-list">
-                <li>Udemy / Learning Projects</li>
-                <li class="footer-project">
-                    <a href="../unity-projects/unity-projects.html">Unity</a>
-                </li>
-            </ul>
-            </nav>
+      <div class="footer-container" id="footer-left-container">
+        <h3>Projects:</h3>
+        <nav class="footer-projects-container">
+          <ul class="footer-projects-list">
+            <li>Unity</li>
+            <li class="footer-project">
+              <a href="../project-evolment/evolment.html">Evolvment</a>
+            </li>
+            <li class="footer-project">
+              <a href="../project-paint/paint.html">Paint!</a>
+            </li>
+          </ul>
+          <ul class="footer-projects-list">
+            <li>Learning Projects</li>
+            <li class="footer-project">
+              <a href="../unity-projects/unity-projects.html">Unity</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="footer-border"></div>
+
+      <div class="footer-container" id="footer-right-container">
+        <h3>About Me</h3>
+        <a href="../about-me/about-me.html" id="footer-about-me-link"
+          >About Me</a
+        >
+
+        <h3>Contact Me</h3>
+        <a href="mailto:nehemiah.cedillo@hotmail.com"
+          >nehemiah.cedillo@hotmail.com</a
+        >
+        <div class="social-media-container">
+          <a
+            href="https://www.instagram.com/nemo_gamedevstudios/"
+            class="instagram-icon icon"
+          >
+          </a>
+          <a
+            href="https://nehemiah-cedillo.itch.io/"
+            class="itch-icon icon"
+          ></a>
+          <a
+            href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
+            class="facebook-icon icon"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nehemiah-cedillo/"
+            class="linkedin-icon icon"
+          ></a>
         </div>
-
-        <div id="footer-border"></div>
-
-        <div class="footer-container" id="footer-right-container">
-            <h3>About Me</h3>
-            <a href="../about-me/about-me.html" id="footer-about-me-link">About Me</a>
-
-            <h3>Contact Me</h3>
-            <a href="mailto:nehemiah.cedillo@hotmail.com">nehemiah.cedillo@hotmail.com</a>
-            <div class="social-media-container">
-                <a href="https://www.instagram.com/nemo_gamedevstudios/" class="instagram-icon icon"> </a>
-                <a href="https://nehemiah-cedillo.itch.io/" class="itch-icon icon"></a>
-                <a href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr" class="facebook-icon icon"></a>
-                <a href="https://www.linkedin.com/in/nehemiah-cedillo/" class="linkedin-icon icon"></a>
-            </div>
-        </div>
+      </div>
     </nav>
-</footer>
-
+  </footer>
 </html>
