@@ -1,29 +1,29 @@
-:root{
+:root {
   --sky-col: #e8fcff;
   --ocean-col: #00c3ff;
   --btn-border-col: gold;
   --btn-bg-col: tan;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&display=swap");
 
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-body{
-    background-color: var(--sky-col);
+body {
+  background-color: var(--sky-col);
 }
-.btn{
-    padding: 0.5rem 0;
-    color: black;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-align: center;
+.btn {
+  padding: 0.5rem 0;
+  color: black;
+  font-size: 1.5rem;
+  text-decoration: none;
+  text-align: center;
 
-    margin: 0 auto;
+  margin: 0 auto;
 
-    background-color: var(--btn-bg-col);
-    border: 10px solid var(--btn-border-col);
+  background-color: var(--btn-bg-col);
+  border: 10px solid var(--btn-border-col);
 }
 .name-container {
   display: flex;
@@ -42,25 +42,25 @@ body{
   border: solid 1px black;
   background-color: transparent;
 }
-h1,h3{
+h1,
+h3 {
   font-family: "Grenze Gotisch", serif;
 }
-h1{
+h1 {
   font-size: 4rem;
   line-height: 4rem;
 }
 
-
 /* || Hero Section */
 #hero-section {
   background-image: url(../Assets/hero-page-gif.gif);
-  background-size: cover;
-
+  background-color: var(--ocean-col);
+  background-repeat: no-repeat;
   height: 100vh;
 
   display: flex;
   flex-direction: column;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   gap: 15vh;
 }
 .upper {
@@ -73,11 +73,10 @@ h1{
   align-items: center;
   gap: 2vh;
 }
-#about-me-container a{
+#about-me-container a {
   width: 50vw;
   text-align: center;
 }
-
 
 /* || Transition Section */
 #transition-section {
@@ -86,12 +85,9 @@ h1{
   background: linear-gradient(
     var(--ocean-col),
     var(--ocean-col) 25%,
-    /* transparent 75% */
-    navy 100%
-  )
+    /* transparent 75% */ navy 100%
+  );
 }
-
-
 
 /* || Projects Section */
 #project-section {
@@ -103,14 +99,6 @@ h1{
 
   padding: 15vh 0;
 }
-/* #submarine-image {
-  background-image: url(../Assets/submarine-gif.gif);
-  background-size: contain;
-  background-repeat: no-repeat;
-  
-  width: 300px;
-  height: 300px;
-} */
 .project-section-title {
   text-align: center;
   border: solid 5px white;
@@ -125,7 +113,7 @@ h1{
   flex-direction: column;
   gap: 5vh;
 }
-.project-cards-container{
+.project-cards-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,28 +122,30 @@ h1{
   gap: 5vh;
 }
 
-
 /* || Project Cards */
-.project-card{
+.project-card {
   min-width: 300px;
   width: 60vw;
   border: solid 5px lightblue;
   height: 50vh;
 }
-.project-card-inner{
+.project-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
 }
-.project-card-front{
+.project-card-front {
   z-index: 4;
   transition: 3s;
 }
-.project-card-back, .project-card-back h1, .description, .project-card-back a{
+.project-card-back,
+.project-card-back h1,
+.description,
+.project-card-back a {
   z-index: 3;
 }
-.project-card-back{
+.project-card-back {
   width: 100%;
   height: 100%;
 
@@ -165,7 +155,7 @@ h1{
   flex-direction: column;
   justify-content: space-evenly;
 }
-.project-card-back-img{
+.project-card-back-img {
   z-index: 2;
   position: absolute;
   width: 100%;
@@ -174,17 +164,17 @@ h1{
 
   filter: brightness(30%);
 }
-.project-card-back a{
+.project-card-back a {
   margin-bottom: 5%;
   text-align: center;
 }
-.project-card-back .btn{
+.project-card-back .btn {
   min-width: auto;
   width: 80%;
   padding: 0;
   font-size: 2rem;
 }
-.description{
+.description {
   text-align: left;
   margin: 0 10%;
   height: 100%;
@@ -193,115 +183,122 @@ h1{
   flex-direction: column;
   justify-content: space-evenly;
 }
-.project-card-front, .project-card-back{
+.project-card-front,
+.project-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.project-card-inner:hover .project-card-front{
+.project-card-inner:hover .project-card-front {
   animation-name: project-fade-out;
   animation-duration: 3s;
   animation-fill-mode: forwards;
 }
-.project-card-front img{
+.project-card-front img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-
-
-
 /* || Footer */
-footer{
+footer {
   background-color: black;
   color: white;
   padding: 5vh 3vw 5vh 3vw;
-
 }
-footer a{
+footer a {
   color: lightblue;
 }
-.footer-nav{
+.footer-nav {
   display: flex;
   flex-direction: row;
 
   border-top: solid 2px white;
   margin: 5% 0;
 }
-.footer-container{
+.footer-container {
   display: flex;
   flex-direction: column;
-  
+
   margin: 0 2%;
   width: 100%;
   height: 100%;
 }
-.footer-container h3{
+.footer-container h3 {
   margin: 1vh 0;
 }
-#footer-border{
+#footer-border {
   border-left: solid 2px white;
   margin: 0 3vw;
 }
-.footer-projects-list{
+.footer-projects-list {
   list-style-position: inside;
   padding: 0;
 }
-footer li{
+footer li {
   list-style-type: disc;
   padding-left: 0;
 }
-footer li:first-child{
+footer li:first-child {
   list-style-type: none;
 }
 
-
 /* || Social Media Icons */
 .social-media-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  margin-top: 5%;
 }
-.icon{
-    width: 1rem;
-    height: 1rem;
+.icon {
+  width: 1rem;
+  height: 1rem;
 
-    padding: 1rem;
+  padding: 1rem;
 
-    background-size:contain;
-    background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
-.instagram-icon{
-    background-image: url("../Assets/Icons/instagram-icon.png");
+.instagram-icon {
+  background-image: url("../Assets/Icons/instagram-icon.png");
 }
-.itch-icon{
-    background-image: url("../Assets/Icons/itch-icon.png");
+.itch-icon {
+  background-image: url("../Assets/Icons/itch-icon.png");
 }
-.facebook-icon{
-    background-image: url("../Assets/Icons/facebook-icon.png");
-    min-width: 16px;
-    min-height: 16px;
+.facebook-icon {
+  background-image: url("../Assets/Icons/facebook-icon.png");
+  min-width: 16px;
+  min-height: 16px;
 }
-.linkedin-icon{
-    background-image: url("../Assets/Icons/linkedin-icon.png");
-    background-size: cover;
-    background-color: white;
-    border-radius: 5px;
+.linkedin-icon {
+  background-image: url("../Assets/Icons/linkedin-icon.png");
+  background-size: cover;
+  background-color: white;
+  border-radius: 5px;
 }
-
 
 /* || Animations */
 @keyframes project-fade-out {
-  0%   {opacity: 1;}
-  20%  {opacity: 0;}
-  100% {z-index: 1;}
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    z-index: 1;
+  }
 }
 @keyframes project-fade-in {
-  0%   {opacity: 0;}
-  20%  {opacity: 1;}
-  100% {z-index: 4;}
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    z-index: 4;
+  }
 }
 
 /* ========================================
@@ -311,76 +308,68 @@ You can adjust the min-width numbers below, and add as many new media queries as
 
 /* Minimum width for iPads and tablets.  */
 @media all and (min-width: 481px) {
-	
 } /* closes 481px+ */
-
-
 
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
-	#hero-section{
+  #hero-section {
     background-size: 100%;
     justify-content: space-between;
   }
-  .name-container{
+  .name-container {
     display: flex;
     justify-content: center;
     height: 100%;
     gap: 5vh;
   }
-  .name-container h1{
+  .name-container h1 {
     font-size: 5rem;
   }
-  .upper{
+  .upper {
     font-size: 200%;
   }
-  #about-me-container{
+  #about-me-container {
     margin: 2vh auto;
   }
-  #about-me-container a{
+  #about-me-container a {
     width: auto;
     padding: 1rem 3rem;
     text-align: center;
   }
-  .skills-container{
+  .skills-container {
     justify-content: center;
     align-items: center;
     width: auto;
     padding: 1rem 5vw;
     border: solid 3px black;
   }
-  .skills-container h3{
+  .skills-container h3 {
     font-size: 2rem;
   }
 
-  .btn:hover{
+  .btn:hover {
     border-color: var(--btn-bg-col);
     background-color: var(--btn-border-col);
   }
-	
-  .project-cards-container{
+
+  .project-cards-container {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     width: 90vw;
   }
-  .project-card{
+  .project-card {
     min-width: 20vw;
     width: auto;
   }
-  .project-card-back .btn{
+  .project-card-back .btn {
     padding: 0.5rem 0;
   }
-  .description{
+  .description {
     font-size: 1.2rem;
   }
-
 } /* closes 769px+ */
-
-
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
-	
-  
 } /* closes 1024px+ */

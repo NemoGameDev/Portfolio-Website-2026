@@ -186,18 +186,21 @@ You can adjust the min-width numbers below, and add as many new media queries as
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        
     }
 
     .project-container{
         width: 48%;
 
         display: grid;
-        grid-template-columns: 6;
+        grid-template-columns: 8;
         grid-template-rows: 4;
     }
     .project-video{
-        grid-column: 1/ span 3;
+        grid-column: 1/ span 4;
         grid-row: 1/ span 3;
+
+        height: 100%;
     }
     .btn{
         grid-column: 4 /span 1;
