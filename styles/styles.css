@@ -155,7 +155,8 @@ h1 {
   flex-direction: column;
   justify-content: space-evenly;
 }
-.project-card-back-img {
+
+.project-card-back img {
   z-index: 2;
   position: absolute;
   width: 100%;
@@ -164,6 +165,13 @@ h1 {
 
   filter: brightness(30%);
 }
+
+.full-brightness{
+  filter: brightness(100%) !important;
+}
+
+
+
 .project-card-back a {
   margin-bottom: 5%;
   text-align: center;
