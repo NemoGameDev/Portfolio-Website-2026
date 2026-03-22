@@ -228,67 +228,6 @@ section {
     object-fit: contain;
 }
 
-
-
-
-/* || Footer */
-footer {
-    background-color: black;
-    color: white;
-    padding: 5vh 3vw 5vh 3vw;
-}
-
-footer a {
-    color: lightblue;
-}
-
-.footer-nav {
-    display: flex;
-    flex-direction: row;
-
-    border-top: solid 2px white;
-    margin: 5% 0;
-}
-
-.footer-container {
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 2%;
-    width: 100%;
-    height: 100%;
-}
-
-.footer-container h3 {
-    margin: 1vh 0;
-}
-
-#footer-border {
-    border-left: solid 2px white;
-    margin: 0 3vw;
-}
-
-.footer-projects-list {
-    list-style-position: inside;
-    padding: 0;
-}
-
-footer li {
-    list-style-type: disc;
-    padding-left: 0;
-}
-
-footer li:first-child {
-    list-style-type: none;
-}
-
-.social-media-container {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    margin-top: 5%;
-}
-
 /* ========================================
 MEDIA QUERIES!
 You can adjust the min-width numbers below, and add as many new media queries as you need.

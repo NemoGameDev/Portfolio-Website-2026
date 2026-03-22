@@ -1,156 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
-    <link rel="stylesheet" href="styles/about-me.css">
-</head>
+    <link rel="stylesheet" href="styles/about-me.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+  </head>
 
-<body>
+  <body>
     <div id="background-gif"></div>
     <div class="container">
+      <div id="button-container">
+        <a href="../index.html" class="yellow-box btn" id="back-btn">◀ Back</a>
+      </div>
 
-        <div id="button-container">
-            <a href="../index.html" class="yellow-box btn" id="back-btn">◀ Back</a>
+      <section id="info-section">
+        <figure id="profile-pic">
+          <img src="../Assets/contact-assets/temp-contact-img.png" alt="" />
+        </figure>
+
+        <div id="blurb-container" class="yellow-box">
+          <h1>Hello!</h1>
+          <p>I am Nehemiah Cedillo!</p>
+          <p>
+            I am a Game Developer, currently improving and expanding my skill
+            sets in Game Design and programming!
+          </p>
+          <p>Currently, I am specializing in:</p>
+          <ul>
+            <li>NPC Programming</li>
+            <li>Gameplay Programming</li>
+            <li>Unity/C# Programming</li>
+            <li>Game Design, including:</li>
+            <ul>
+              <li>GDD Documentation</li>
+              <li>System Designing</li>
+            </ul>
+          </ul>
+          <p>
+            I also have a background in Web Design and Development, including:
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <p>If you would like to collaborate, feel free to reach out!</p>
         </div>
 
-        <section id="info-section">
-            <figure id="profile-pic">
-                <img src="../Assets/contact-assets/temp-contact-img.png" alt="">
-            </figure>
+        <div class="info-container" id="email-info">
+          <div class="info-row">
+            <img src="../Assets/Icons/mail.png" alt="" class="no-link-icon" />
+            <a href="mailto:nehemiah.cedillo@hotmail.com" id="email-link"
+              >nehemiah.cedillo@hotmail.com</a
+            >
+          </div>
+        </div>
 
-            <div id="blurb-container" class="yellow-box">
-                <h1>Hello!</h1>
-                <p>I am Nehemiah Cedillo!</p>
-                <p>I am a Game Developer, currently improving
-                    and expanding my skill sets in Game Design and programming!
-                </p>
-                <p>Currently, I am specializing in:</p>
-                <ul>
-                    <li>NPC Programming</li>
-                    <li>Gameplay Programming</li>
-                    <li>Unity/C# Programming</li>
-                    <li>Game Design, including:</li>
-                    <ul>
-                        <li>GDD Documentation</li>
-                        <li>System Designing</li>
-                    </ul>
-                </ul>
-                <p>I also have a background in Web Design and
-                    Development, including:
-                </p>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <p>If you would like to collaborate, feel free to reach out!</p>
-            </div>
+        <div class="info-container" id="links-info">
+          <div class="info-row">
+            <a
+              href="https://www.instagram.com/nemo_gamedevstudios/"
+              class="instagram-icon icon"
+            >
+            </a>
+            <a
+              href="https://nehemiah-cedillo.itch.io/"
+              class="itch-icon icon"
+            ></a>
+            <a
+              href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
+              class="facebook-icon icon"
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/nehemiah-cedillo/"
+              class="linkedin-icon icon"
+            ></a>
+          </div>
+        </div>
 
+        <div class="info-container" id="specialization-info">
+          <h2>Specializations</h2>
+          <div class="info-row">
+            <img
+              src="../Assets/Icons/Controller.png"
+              alt=""
+              class="no-link-icon"
+            />
+            <h3>Gameplay Programming</h3>
+          </div>
+          <div class="info-row">
+            <img
+              src="../Assets/Icons/Stick Figure.png"
+              alt=""
+              class="no-link-icon"
+            />
+            <h3>AI Programming</h3>
+          </div>
+          <div class="info-row">
+            <img
+              src="../Assets/Icons/unity-icon.png"
+              alt=""
+              class="no-link-icon"
+            />
+            <h3>Unity/C# Programming</h3>
+          </div>
+          <div class="info-row">
+            <img src="../Assets/Icons/folder.png" alt="" class="no-link-icon" />
+            <h3>Game Design</h3>
+          </div>
+        </div>
+      </section>
 
-            <div class="info-container" id="email-info">
-                <div class="info-row">
-                    <img src="../Assets/Icons/mail.png" alt="" class="no-link-icon">
-                    <a href="mailto:nehemiah.cedillo@hotmail.com" id="email-link">nehemiah.cedillo@hotmail.com</a>
-                </div>
-            </div>
+      <section id="degree-section">
+        <h2 class="udemy-certs-header">Degrees</h2>
+        <figure class="degree">
+          <img src="../Assets/degrees-certs/cod-degree.JPEG" alt="" />
+        </figure>
+      </section>
 
-            <div class="info-container" id="links-info">
-                <div class="info-row">
-                    <a href="https://www.instagram.com/nemo_gamedevstudios/" class="instagram-icon icon"> </a>
-                    <a href="https://nehemiah-cedillo.itch.io/" class="itch-icon icon"></a>
-                    <a href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr" class="facebook-icon icon"></a>
-                    <a href="https://www.linkedin.com/in/nehemiah-cedillo/" class="linkedin-icon icon"></a>
-                </div>
-            </div>
-
-            <div class="info-container" id="specialization-info">
-                <h2>Specializations</h2>
-                <div class="info-row">
-                    <img src="../Assets/Icons/Controller.png" alt="" class="no-link-icon">
-                    <h3>Gameplay Programming</h3>
-                </div>
-                <div class="info-row">
-                    <img src="../Assets/Icons/Stick Figure.png" alt="" class="no-link-icon">
-                    <h3>AI Programming</h3>
-                </div>
-                <div class="info-row">
-                    <img src="../Assets/Icons/unity-icon.png" alt="" class="no-link-icon">
-                    <h3>Unity/C# Programming</h3>
-                </div>
-                <div class="info-row">
-                    <img src="../Assets/Icons/folder.png" alt="" class="no-link-icon">
-                    <h3>Game Design</h3>
-                </div>
-            </div>
+      <section id="udemy-certs-section">
+        <figure><img src="" /></figure>
+        <h2 class="udemy-certs-header">Penny Holistic3D</h2>
+        <section class="udemy-certs-container">
+          <figure class="udemy-cert">
+            <img
+              src="../Assets/degrees-certs/penny-holistic-3d/guide-to-AI.jpg"
+            />
+          </figure>
+          <figure class="udemy-cert">
+            <img
+              src="../Assets/degrees-certs/penny-holistic-3d/video-game-opt.jpg"
+            />
+          </figure>
         </section>
 
-
-        <section id="degree-section">
-            <h2 class="udemy-certs-header">Degrees</h2>
-            <figure class="degree">
-                <img src="../Assets/degrees-certs/cod-degree.JPEG" alt="">
-            </figure>
+        <h2 class="udemy-certs-header">Gamedev.tv</h2>
+        <section class="udemy-certs-container">
+          <figure class="udemy-cert">
+            <img
+              src="../Assets/degrees-certs/gamedev.tv/audio-essentials.jpg"
+            />
+          </figure>
+          <figure class="udemy-cert">
+            <img src="../Assets/degrees-certs/gamedev.tv/finish-it.jpg" />
+          </figure>
+          <figure class="udemy-cert">
+            <img src="../Assets/degrees-certs/gamedev.tv/game-feel.jpg" />
+          </figure>
+          <figure class="udemy-cert">
+            <img
+              src="../Assets/degrees-certs/gamedev.tv/jobs-in-videogame-industry.jpg"
+            />
+          </figure>
+          <figure class="udemy-cert">
+            <img src="../Assets/degrees-certs/gamedev.tv/unity-2d.jpg" />
+          </figure>
+          <figure class="udemy-cert">
+            <img src="../Assets/degrees-certs/gamedev.tv/unity-3d.jpg" />
+          </figure>
         </section>
-
-        <section id="udemy-certs-section">
-            <figure><img src=""></figure>
-            <h2 class="udemy-certs-header">Penny Holistic3D</h2>
-            <section class="udemy-certs-container">
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/penny-holistic-3d/guide-to-AI.jpg"></figure>
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/penny-holistic-3d/video-game-opt.jpg">
-                </figure>
-            </section>
-
-            <h2 class="udemy-certs-header">Gamedev.tv</h2>
-            <section class="udemy-certs-container">
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/gamedev.tv/audio-essentials.jpg"></figure>
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/gamedev.tv/finish-it.jpg"></figure>
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/gamedev.tv/game-feel.jpg"></figure>
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/gamedev.tv/jobs-in-videogame-industry.jpg">
-                </figure>
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/gamedev.tv/unity-2d.jpg"></figure>
-                <figure class="udemy-cert"><img src="../Assets/degrees-certs/gamedev.tv/unity-3d.jpg"></figure>
-            </section>
-        </section>
+      </section>
     </div>
-</body>
+  </body>
 
-<footer>
-    <img src="../Assets/WebIcon.png" alt="" id="icon">
+  <footer>
+    <img src="../Assets/WebIcon.png" alt="" id="icon" />
     <p>@ Copyright 2026 Nehemiah Cedillo. All Rights Reserved.</p>
     <nav class="footer-nav">
-        <div class="footer-container" id="footer-left-container">
-            <h3>Projects:</h3>
-            <ul class="footer-projects-list">
-                <li>Unity</li>
-                <li class="footer-project">
-                    <a href="../project-evolment/evolment.html">Evolvment</a>
-                </li>
-                <li class="footer-project">
-                    <a href="../project-paint/paint.html">Paint!</a>
-                </li>
-            </ul>
+      <div class="footer-container" id="footer-left-container">
+        <h3>Projects:</h3>
+        <nav class="footer-projects-container">
+          <ul class="footer-projects-list">
+            <li>Unity</li>
+            <li class="footer-project">
+              <a href="../project-evolment/evolment.html">Evolvment</a>
+            </li>
+            <li class="footer-project">
+              <a href="../project-paint/paint.html">Paint!</a>
+            </li>
+          </ul>
+          <ul class="footer-projects-list">
+            <li>Udemy / Learning Projects</li>
+            <li class="footer-project">
+              <a href="../unity-projects/unity-projects.html">Unity</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="footer-border"></div>
+
+      <div class="footer-container" id="footer-right-container">
+        <h3>About Me</h3>
+        <a href="../about-me/about-me.html" id="footer-about-me-link"
+          >About Me</a
+        >
+
+        <h3>Contact Me</h3>
+        <a href="mailto:nehemiah.cedillo@hotmail.com"
+          >nehemiah.cedillo@hotmail.com</a
+        >
+        <div class="social-media-container">
+          <a
+            href="https://www.instagram.com/nemo_gamedevstudios/"
+            class="instagram-icon icon"
+          >
+          </a>
+          <a
+            href="https://nehemiah-cedillo.itch.io/"
+            class="itch-icon icon"
+          ></a>
+          <a
+            href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr"
+            class="facebook-icon icon"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/nehemiah-cedillo/"
+            class="linkedin-icon icon"
+          ></a>
         </div>
-
-        <div id="footer-border"></div>
-
-        <div class="footer-container" id="footer-right-container">
-            <h3>About Me</h3>
-            <a href="../about-me/about-me.html" id="footer-about-me-link">About Me</a>
-
-            <h3>Contact Me</h3>
-            <a href="mailto:nehemiah.cedillo@hotmail.com">nehemiah.cedillo@hotmail.com</a>
-            <div class="social-media-container">
-                <a href="https://www.instagram.com/nemo_gamedevstudios/" class="instagram-icon icon"> </a>
-                <a href="https://nehemiah-cedillo.itch.io/" class="itch-icon icon"></a>
-                <a href="https://www.facebook.com/share/17mvBxDh7H/?mibextid=wwXIfr" class="facebook-icon icon"></a>
-                <a href="https://www.linkedin.com/in/nehemiah-cedillo/" class="linkedin-icon icon"></a>
-            </div>
-        </div>
+      </div>
     </nav>
-</footer>
-
+  </footer>
 </html>
